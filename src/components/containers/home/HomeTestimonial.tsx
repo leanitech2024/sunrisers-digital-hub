@@ -1,14 +1,15 @@
 'use client';
 
-import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 import { Autoplay, Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
-import sthumbthree from '../../../../public/images/testimonial/s-thumb-three.png';
-import sthumbtwo from '../../../../public/images/testimonial/s-thumb-two.png';
-import sthumb from '../../../../public/images/testimonial/s-thumb.png';
+// import sthumbthree from '../../../../public/images/testimonial/s-thumb-three.png';
+// import sthumbtwo from '../../../../public/images/testimonial/s-thumb-two.png';
+// import sthumb from '../../../../public/images/testimonial/s-thumb.png';
+
+const isDev = process.env.NODE_ENV === 'development';
 
 const HomeTestimonial = () => {
   const [nextSlideIndex, setNextSlideIndex] = useState<number>(1);
@@ -27,12 +28,16 @@ const HomeTestimonial = () => {
           loop={true}
           centeredSlides={true}
           modules={[Autoplay]}
-          autoplay={{
-            delay: 1,
-            disableOnInteraction: false,
-            pauseOnMouseEnter: true,
-            reverseDirection: false,
-          }}
+          autoplay={
+            isDev
+              ? undefined
+              : {
+                  delay: 1,
+                  disableOnInteraction: false,
+                  pauseOnMouseEnter: true,
+                  reverseDirection: false,
+                }
+          }
           className='testimonial__text-slider'>
           <SwiperSlide>
             <div className='testimonial__text-slider-single'>
@@ -120,11 +125,15 @@ const HomeTestimonial = () => {
                 centeredSlides={false}
                 centeredSlidesBounds={false}
                 modules={[Autoplay, Navigation]}
-                autoplay={{
-                  delay: 5000,
-                  disableOnInteraction: false,
-                  pauseOnMouseEnter: true,
-                }}
+                autoplay={
+                  isDev
+                    ? undefined
+                    : {
+                        delay: 5000,
+                        disableOnInteraction: false,
+                        pauseOnMouseEnter: true,
+                      }
+                }
                 navigation={{
                   nextEl: '.next-testimonial-three',
                   prevEl: '.prev-testimonial-three',
@@ -134,9 +143,9 @@ const HomeTestimonial = () => {
                 <SwiperSlide>
                   <div className='testimonial-s__slider-single'>
                     <div className='row gaper align-items-center'>
-                      <div className='col-12 col-lg-4 col-xxl-4'>
+                      <div className='col-12 col-lg-auto'>
                         <div className='thumb'>
-                          <Image src={sthumb} alt='Image' />
+                          {/* <Image src={sthumbthree} alt='Image' /> */}
                           <svg
                             xmlns='http://www.w3.org/2000/svg'
                             width='44'
@@ -151,7 +160,7 @@ const HomeTestimonial = () => {
                           </svg>
                         </div>
                       </div>
-                      <div className='col-12 col-lg-7 offset-lg-1 col-xxl-7 offset-xxl-1'>
+                      <div className='col-12 col-lg-10 offset-lg-1 col-xxl-10 offset-xxl-1'>
                         <div className='testimonial-s__content'>
                           <div className='quote'>
                             <i className='fa-solid fa-quote-right'></i>
@@ -174,12 +183,13 @@ const HomeTestimonial = () => {
                     </div>
                   </div>
                 </SwiperSlide>
+
                 <SwiperSlide>
                   <div className='testimonial-s__slider-single'>
                     <div className='row gaper align-items-center'>
-                      <div className='col-12 col-lg-4 col-xxl-4'>
+                      <div className='col-12 col-lg-auto'>
                         <div className='thumb'>
-                          <Image src={sthumbtwo} alt='Image' />
+                          {/* <Image src={sthumbthree} alt='Image' /> */}
                           <svg
                             xmlns='http://www.w3.org/2000/svg'
                             width='44'
@@ -194,7 +204,7 @@ const HomeTestimonial = () => {
                           </svg>
                         </div>
                       </div>
-                      <div className='col-12 col-lg-7 offset-lg-1 col-xxl-7 offset-xxl-1'>
+                      <div className='col-12 col-lg-10 offset-lg-1 col-xxl-10 offset-xxl-1'>
                         <div className='testimonial-s__content'>
                           <div className='quote'>
                             <i className='fa-solid fa-quote-right'></i>
@@ -217,12 +227,13 @@ const HomeTestimonial = () => {
                     </div>
                   </div>
                 </SwiperSlide>
+
                 <SwiperSlide>
                   <div className='testimonial-s__slider-single'>
                     <div className='row gaper align-items-center'>
-                      <div className='col-12 col-lg-4 col-xxl-4'>
+                      <div className='col-12 col-lg-auto'>
                         <div className='thumb'>
-                          <Image src={sthumbthree} alt='Image' />
+                          {/* <Image src={sthumbthree} alt='Image' /> */}
                           <svg
                             xmlns='http://www.w3.org/2000/svg'
                             width='44'
@@ -237,7 +248,7 @@ const HomeTestimonial = () => {
                           </svg>
                         </div>
                       </div>
-                      <div className='col-12 col-lg-7 offset-lg-1 col-xxl-7 offset-xxl-1'>
+                      <div className='col-12 col-lg-10 offset-lg-1 col-xxl-10 offset-xxl-1'>
                         <div className='testimonial-s__content'>
                           <div className='quote'>
                             <i className='fa-solid fa-quote-right'></i>
@@ -277,7 +288,7 @@ const HomeTestimonial = () => {
           </button>
         </div>
       </div>
-      <div className='other-section'>
+      {/* <div className='other-section'>
         <Image
           className='other-section-image'
           src={
@@ -289,7 +300,7 @@ const HomeTestimonial = () => {
           }
           alt='Next Slide Image'
         />
-      </div>
+      </div> */}
       <div className='lines d-none d-lg-flex'>
         <div className='line'></div>
         <div className='line'></div>

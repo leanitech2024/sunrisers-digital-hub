@@ -5,7 +5,6 @@ import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
-import banneronethumb from '../../../../public/images/banner/banner-one-thumb.png';
 import star from '../../../../public/images/star.png';
 import videoframe from '../../../../public/images/video-frame.png';
 
@@ -81,8 +80,12 @@ const HomeOneBanner = () => {
           </div>
         </div>
         <Image
-          src={banneronethumb}
+          src={
+            'https://xpovio-ltr-nine.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbanner-one-thumb.b80d3675.png&w=1080&q=75'
+          }
           alt='Image'
+          width={1080}
+          height={1080}
           className='banner-one-thumb d-none d-sm-block g-ban-one'
         />
         <Image src={star} alt='Image' className='star' />
@@ -124,7 +127,7 @@ const HomeOneBanner = () => {
         <div className='video-inner'>
           <div
             className='video-container'
-            onClick={(e: any) => e.stopPropagation()}>
+            onClick={(e: React.MouseEvent) => e.stopPropagation()}>
             {videoActive && <YoutubeEmbed embedId='fSv6UgCkuTU' />}
             <button
               aria-label='close video popup'

@@ -12,7 +12,7 @@ import two from '../../../../public/images/sponsor/two.png';
 
 const HomeSponsor = () => {
   return (
-    <div className='sponsor section pb-0'>
+    <div className='sponsor section'>
       <div className='container-fluid'>
         <div className='row justify-content-center'>
           <div className='col-12'>
@@ -142,13 +142,13 @@ const HomeSponsor = () => {
           </div>
         </div>
       </div>
-      <div className='lines d-none d-lg-flex'>
+      {/* <div className='lines d-none d-lg-flex'>
         <div className='line'></div>
         <div className='line'></div>
         <div className='line'></div>
         <div className='line'></div>
         <div className='line'></div>
-      </div>
+      </div> */}
     </div>
   );
 };

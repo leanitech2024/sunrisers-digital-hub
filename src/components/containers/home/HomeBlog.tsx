@@ -1,7 +1,5 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import one from '../../../../public/images/blog/one.png';
-import two from '../../../../public/images/blog/two.png';
 
 const HomeBlog = () => {
   return (
@@ -23,7 +21,14 @@ const HomeBlog = () => {
             <div className='blog__single fade-top'>
               <div className='blog__single-thumb topy-tilt'>
                 <Link href='blog-single'>
-                  <Image src={one} alt='Image' />
+                  <Image
+                    src={
+                      'https://xpovio-ltr-nine.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fone.59300acb.png&w=1920&q=75'
+                    }
+                    alt='Image'
+                    width={1920}
+                    height={1080}
+                  />
                 </Link>
               </div>
               <div className='blog__single-content'>
@@ -46,7 +51,14 @@ const HomeBlog = () => {
             <div className='blog__single fade-top'>
               <div className='blog__single-thumb topy-tilt'>
                 <Link href='blog-single'>
-                  <Image src={two} alt='Image' />
+                  <Image
+                    src={
+                      'https://xpovio-ltr-nine.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ftwo.67d336f9.png&w=1920&q=75'
+                    }
+                    alt='Image'
+                    width={1920}
+                    height={1080}
+                  />
                 </Link>
               </div>
               <div className='blog__single-content'>

@@ -7,8 +7,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect } from 'react';
 import dotlarge from '../../../../public/images/agency/dot-large.png';
-import thumbone from '../../../../public/images/agency/thumb-one.png';
-import thumbtwo from '../../../../public/images/agency/thumb-two.png';
 import star from '../../../../public/images/star.png';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -83,16 +81,24 @@ const Agency = () => {
           <div className='col-12 col-lg-6'>
             <div className='agency__thumb'>
               <Image
-                src={thumbone}
+                src={
+                  'https://xpovio-ltr-nine.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fthumb-one.1ae45dc2.png&w=1080&q=75'
+                }
                 alt='Image'
                 className='thumb-one fade-left'
                 priority
+                width={1080}
+                height={1080}
               />
               <Image
-                src={thumbtwo}
+                src={
+                  'https://xpovio-ltr-nine.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fthumb-two.96191b11.png&w=1080&q=75'
+                }
                 alt='Image'
                 className='thumb-two fade-right'
                 priority
+                width={1080}
+                height={1080}
               />
             </div>
           </div>

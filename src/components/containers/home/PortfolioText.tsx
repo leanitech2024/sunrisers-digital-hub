@@ -7,13 +7,6 @@ import { Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
 import dot from '../../../../public/images/portfolio/dot.png';
-import five from '../../../../public/images/portfolio/five.png';
-import four from '../../../../public/images/portfolio/four.png';
-import one from '../../../../public/images/portfolio/one.png';
-import seven from '../../../../public/images/portfolio/seven.png';
-import six from '../../../../public/images/portfolio/six.png';
-import three from '../../../../public/images/portfolio/three.png';
-import two from '../../../../public/images/portfolio/two.png';
 
 const PortfolioText = () => {
   const [hover, setHover] = useState(0);
@@ -116,7 +109,14 @@ const PortfolioText = () => {
               }
               onMouseEnter={() => setHover(0)}>
               <Link href='#'>
-                <Image src={one} alt='Image' />
+                <Image
+                  src={
+                    'https://xpovio-ltr-nine.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fone.846cfd2c.png&w=1080&q=75'
+                  }
+                  alt='Image'
+                  width={1080}
+                  height={1080}
+                />
               </Link>
               <div className='portfolio__single-content'>
                 <Link href='#'>
@@ -136,7 +136,14 @@ const PortfolioText = () => {
               }
               onMouseEnter={() => setHover(1)}>
               <Link href='#'>
-                <Image src={two} alt='Image' />
+                <Image
+                  src={
+                    'https://xpovio-ltr-nine.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ftwo.d1347166.png&w=1080&q=75'
+                  }
+                  alt='Image'
+                  width={1080}
+                  height={1080}
+                />
               </Link>
               <div className='portfolio__single-content'>
                 <Link href='#'>
@@ -156,7 +163,14 @@ const PortfolioText = () => {
               }
               onMouseEnter={() => setHover(2)}>
               <Link href='#'>
-                <Image src={three} alt='Image' />
+                <Image
+                  src={
+                    'https://xpovio-ltr-nine.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fthree.4de2ab0d.png&w=1080&q=75'
+                  }
+                  alt='Image'
+                  width={1080}
+                  height={1080}
+                />
               </Link>
               <div className='portfolio__single-content'>
                 <Link href='#'>
@@ -176,7 +190,14 @@ const PortfolioText = () => {
               }
               onMouseEnter={() => setHover(3)}>
               <Link href='#'>
-                <Image src={four} alt='Image' />
+                <Image
+                  src={
+                    'https://xpovio-ltr-nine.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ffour.d6f4ddea.png&w=1080&q=75'
+                  }
+                  alt='Image'
+                  width={1080}
+                  height={1080}
+                />
               </Link>
               <div className='portfolio__single-content'>
                 <Link href='#'>
@@ -196,7 +217,14 @@ const PortfolioText = () => {
               }
               onMouseEnter={() => setHover(4)}>
               <Link href='#'>
-                <Image src={five} alt='Image' />
+                <Image
+                  src={
+                    'https://xpovio-ltr-nine.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ffive.26015241.png&w=1080&q=75'
+                  }
+                  alt='Image'
+                  width={1080}
+                  height={1080}
+                />
               </Link>
               <div className='portfolio__single-content'>
                 <Link href='#'>
@@ -216,7 +244,14 @@ const PortfolioText = () => {
               }
               onMouseEnter={() => setHover(5)}>
               <Link href='#'>
-                <Image src={six} alt='Image' />
+                <Image
+                  src={
+                    'https://xpovio-ltr-nine.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fsix.2830873e.png&w=1080&q=75'
+                  }
+                  alt='Image'
+                  width={1080}
+                  height={1080}
+                />
               </Link>
               <div className='portfolio__single-content'>
                 <Link href='#'>
@@ -250,7 +285,14 @@ const PortfolioText = () => {
               }
               onMouseEnter={() => setHover(6)}>
               <Link href='#'>
-                <Image src={seven} alt='Image' />
+                <Image
+                  src={
+                    'https://xpovio-ltr-nine.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fseven.af1b6fc2.png&w=1080&q=75'
+                  }
+                  alt='Image'
+                  width={1080}
+                  height={1080}
+                />
               </Link>
               <div className='portfolio__single-content'>
                 <Link href='#'>

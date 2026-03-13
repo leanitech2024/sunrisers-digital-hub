@@ -1,7 +1,7 @@
 import HomeThreeServices from '@/components/containers/home-three/HomeThreeServices';
 import Agency from '@/components/containers/home/Agency';
 import HomeBlog from '@/components/containers/home/HomeBlog';
-import HomeOffer from '@/components/containers/home/HomeOffer';
+// import HomeOffer from '@/components/containers/home/HomeOffer';
 import HomeSponsor from '@/components/containers/home/HomeSponsor';
 import HomeTestimonial from '@/components/containers/home/HomeTestimonial';
 import PortfolioText from '@/components/containers/home/PortfolioText';
@@ -16,7 +16,7 @@ export default function Home() {
         <Agency />
         <PortfolioText />
         <HomeThreeServices />
-        <HomeOffer />
+        {/* <HomeOffer /> */}
         <HomeTestimonial />
         <HomeBlog />
         <HomeSponsor />

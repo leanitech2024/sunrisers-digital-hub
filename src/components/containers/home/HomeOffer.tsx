@@ -39,23 +39,24 @@ const HomeOffer = () => {
           <div className='col-12 col-lg-5'>
             <div className='offer__content section__content'>
               <span className='sub-title'>
-                WHAT WE OFFER
+                Why Choose
                 <i className='fa-solid fa-arrow-right'></i>
               </span>
-              <h2 className='title title-anim'>
-                Giving Your Business Some Great Ideas
-              </h2>
+              <h2 className='title title-anim'>Sunrisers Digital Hub</h2>
               <div className='paragraph'>
                 <p>
-                  Bring to the table win-win survival strategies to ensure
-                  proactive domination. At the end of the day, going forward, a
-                  new normal that has evolved from generation on the runway
-                  heading towards a streamlined cloud solution going forward
-                  porttitor dictum sapien.
+                  We are a team of passionate digital marketers, designers, and
+                  developers who are dedicated to helping businesses succeed in
+                  the digital world. We offer a wide range of services,
+                  including web design and development, search engine
+                  optimization, social media marketing, and more. Our goal is to
+                  help our clients achieve their business objectives by
+                  providing them with innovative and effective digital
+                  solutions.
                 </p>
               </div>
               <div className='section__content-cta'>
-                <Link href='our-services' className='btn btn--secondary'>
+                <Link href='#' className='btn btn--secondary'>
                   view all services
                 </Link>
               </div>
@@ -70,7 +71,7 @@ const HomeOffer = () => {
                 </span>
                 <h2>
                   <Link href='service-single'>
-                    uI / uX experience
+                    3+ Years of Digital Marketing Experience
                     <i className='fa-sharp fa-solid fa-arrow-up-right'></i>
                   </Link>
                 </h2>
@@ -85,7 +86,7 @@ const HomeOffer = () => {
                 </span>
                 <h2>
                   <Link href='service-single'>
-                    web development
+                    Creative & Result-Oriented Strategies
                     <i className='fa-sharp fa-solid fa-arrow-up-right'></i>
                   </Link>
                 </h2>
@@ -100,7 +101,7 @@ const HomeOffer = () => {
                 </span>
                 <h2>
                   <Link href='service-single'>
-                    digital marketing
+                    Affordable Services for Businesses of All Sizes
                     <i className='fa-sharp fa-solid fa-arrow-up-right'></i>
                   </Link>
                 </h2>
@@ -115,7 +116,22 @@ const HomeOffer = () => {
                 </span>
                 <h2>
                   <Link href='service-single'>
-                    product design
+                    Dedicated Support for Clients
+                    <i className='fa-sharp fa-solid fa-arrow-up-right'></i>
+                  </Link>
+                </h2>
+                <div className='offer-thumb-hover d-none d-md-block'>
+                  <Image src={blogthumb} alt='Image' />
+                </div>
+              </div>
+              <div className='offer__cta-single fade-top'>
+                <span className='sub-title'>
+                  05
+                  <i className='fa-solid fa-arrow-right'></i>
+                </span>
+                <h2>
+                  <Link href='service-single'>
+                    Innovative Marketing Solutions
                     <i className='fa-sharp fa-solid fa-arrow-up-right'></i>
                   </Link>
                 </h2>
