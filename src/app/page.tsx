@@ -1,3 +1,4 @@
+import HomeThreeServices from '@/components/containers/home-three/HomeThreeServices';
 import Agency from '@/components/containers/home/Agency';
 import HomeBlog from '@/components/containers/home/HomeBlog';
 import HomeOffer from '@/components/containers/home/HomeOffer';
@@ -14,6 +15,7 @@ export default function Home() {
         <HomeOneBanner />
         <Agency />
         <PortfolioText />
+        <HomeThreeServices />
         <HomeOffer />
         <HomeTestimonial />
         <HomeBlog />

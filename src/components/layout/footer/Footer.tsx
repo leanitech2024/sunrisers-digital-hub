@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import logo from '../../../../public/images/logo.png';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -12,27 +11,43 @@ const Footer = () => {
         <div className='row gaper'>
           <div className='col-12 col-lg-5 col-xl-6'>
             <div className='footer__single'>
-              <Link href='/' className='logo'>
-                <Image src={logo} alt='Image' />
+              <Link
+                href='/'
+                className='logo'
+                style={{
+                  width: '100px',
+                  height: '100px',
+                }}>
+                <Image
+                  src={'/logo.png'}
+                  alt='Image'
+                  width={800}
+                  height={800}
+                  className={'w-full h-full'}
+                />
               </Link>
               <div className='footer__single-meta'>
                 <Link
                   href='https://www.google.com/maps/d/viewer?mid=1UZ57Drfs3SGrTgh6mrYjQktu6uY&hl=en_US&ll=18.672105000000013%2C105.68673800000003&z=17'
                   target='_blank'>
                   <i className='fa-sharp fa-solid fa-location-dot'></i>
-                  901 N Pitt Str., Suite 170 Alexandria, USA
+                  Bangalore, India
                 </Link>
-                <Link href='tel:406-555-0120'>
+                <Link href='tel:+919845732329'>
                   <i className='fa-sharp fa-solid fa-phone-volume'></i>
-                  (406) 555-0120
+                  +919845 732329
                 </Link>
-                <Link href='mailto:info@xpovio.com'>
+                <Link href='tel:+919739932329'>
+                  <i className='fa-sharp fa-solid fa-phone-volume'></i>
+                  +9197399 32329
+                </Link>
+                <Link href='mailto:sunrisersdigitalhub@gmail.com'>
                   <i className='fa-sharp fa-solid fa-envelope'></i>
-                  info@xpovio.com
+                  sunrisersdigitalhub@gmail.com
                 </Link>
               </div>
               <div className='footer__cta text-start'>
-                <Link href='contact-us' className='btn btn--secondary'>
+                <Link href='tel:+919845732329' className='btn btn--secondary'>
                   book a call now
                 </Link>
               </div>
@@ -46,16 +61,16 @@ const Footer = () => {
               <div className='footer__single-content'>
                 <ul>
                   <li>
-                    <Link href='about-us'>About Us</Link>
+                    <Link href='#'>About Us</Link>
                   </li>
                   <li>
-                    <Link href='client-feedback'>Award Winning</Link>
+                    <Link href='#'>Award Winning</Link>
                   </li>
                   <li>
-                    <Link href='blog'>News & Blog</Link>
+                    <Link href='#'>News & Blog</Link>
                   </li>
                   <li>
-                    <Link href='contact-us'>careers</Link>
+                    <Link href='#'>careers</Link>
                   </li>
                 </ul>
               </div>
@@ -68,7 +83,7 @@ const Footer = () => {
               </div>
               <div className='footer__single-content'>
                 <p>
-                  Welcome to our digital agency We specialize in helping
+                  Welcome to our Sunrisers Digital Hub. We specialize in helping
                   business most like yours succeed online.
                 </p>
                 <div className='footer__single-form'>
@@ -100,11 +115,9 @@ const Footer = () => {
                   <div className='footer__copyright-text text-center text-lg-start'>
                     <p>
                       Copyright &copy;
-                      <span id='copyYear'>{currentYear}</span> Xpovio by{' '}
-                      <Link
-                        href='https://themeforest.net/user/UltraDevs'
-                        target='_blank'>
-                        UltraDevs{' '}
+                      <span id='copyYear'>{currentYear}</span>{' '}
+                      <Link href='#' target='_blank'>
+                        Sunrisers Digital Hub{' '}
                       </Link>
                       . All Rights Reserved
                     </p>

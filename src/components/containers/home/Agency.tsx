@@ -103,15 +103,25 @@ const Agency = () => {
                 <i className='fa-solid fa-arrow-right'></i>
               </span>
               <h2 className='title title-anim'>
-                We are digital creative agency in London
+                We are digital creative agency in Bangalore, India
               </h2>
               <div className='paragraph'>
                 <p>
-                  Bring to the table win-win survival strategies to ensure
-                  proactive domination. At the end of the day, going forward, a
-                  new normal that has evolved from generation on the runway
-                  heading towards a streamlined cloud solution going forward
-                  porttitor dictum sapien.
+                  Founded by Dr. Rajini Santosh, the company has been delivering
+                  creative, result-driven digital solutions for the past 3
+                  years.
+                </p>
+                <p>
+                  We believe every brand has the potential to shine in the
+                  digital space. Our team combines creativity, strategy, and
+                  technology to build strong digital presence for businesses of
+                  all sizes. From startups to established brands, we help our
+                  clients connect with their audience, increase visibility, and
+                  achieve real business growth.
+                </p>
+                <p>
+                  At Sunrisers Digital Hub, our goal is simple — to help your
+                  brand rise and succeed in the digital world.
                 </p>
               </div>
               <div className='skill-wrap'>
@@ -153,7 +163,7 @@ const Agency = () => {
                 </div>
               </div>
               <div className='section__content-cta'>
-                <Link href='about-us' className='btn btn--primary'>
+                <Link href='#' className='btn btn--primary'>
                   Know More
                 </Link>
               </div>

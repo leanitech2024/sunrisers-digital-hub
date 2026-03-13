@@ -38,7 +38,7 @@ const PortfolioText = () => {
             <div className='portfolio__text-slider-single'>
               <h2 className='h1'>
                 <Link href='portfolio'>
-                  digital portfolio
+                  Social Media Marketing
                   <i className='fa-sharp fa-solid fa-arrow-down-right'></i>
                 </Link>
               </h2>
@@ -48,7 +48,7 @@ const PortfolioText = () => {
             <div className='portfolio__text-slider-single'>
               <h2 className='h1 str'>
                 <Link href='portfolio'>
-                  digital portfolio
+                  Website Design & Development
                   <i className='fa-sharp fa-solid fa-arrow-down-right'></i>
                 </Link>
               </h2>
@@ -58,7 +58,7 @@ const PortfolioText = () => {
             <div className='portfolio__text-slider-single'>
               <h2 className='h1'>
                 <Link href='portfolio'>
-                  digital portfolio
+                  Search Engine Optimization (SEO)
                   <i className='fa-sharp fa-solid fa-arrow-down-right'></i>
                 </Link>
               </h2>
@@ -68,7 +68,7 @@ const PortfolioText = () => {
             <div className='portfolio__text-slider-single'>
               <h2 className='h1 str'>
                 <Link href='portfolio'>
-                  digital portfolio
+                  Branding & Graphic Design
                   <i className='fa-sharp fa-solid fa-arrow-down-right'></i>
                 </Link>
               </h2>
@@ -78,7 +78,7 @@ const PortfolioText = () => {
             <div className='portfolio__text-slider-single'>
               <h2 className='h1'>
                 <Link href='portfolio'>
-                  digital portfolio
+                  Online Advertising
                   <i className='fa-sharp fa-solid fa-arrow-down-right'></i>
                 </Link>
               </h2>
@@ -88,7 +88,7 @@ const PortfolioText = () => {
             <div className='portfolio__text-slider-single'>
               <h2 className='h1 str'>
                 <Link href='portfolio'>
-                  digital portfolio
+                  Content Creation
                   <i className='fa-sharp fa-solid fa-arrow-down-right'></i>
                 </Link>
               </h2>
@@ -115,15 +115,15 @@ const PortfolioText = () => {
                 (hover === 0 ? ' portfolio__single-active' : ' ')
               }
               onMouseEnter={() => setHover(0)}>
-              <Link href='portfolio'>
+              <Link href='#'>
                 <Image src={one} alt='Image' />
               </Link>
               <div className='portfolio__single-content'>
-                <Link href='portfolio'>
+                <Link href='#'>
                   <i className='fa-sharp fa-solid fa-arrow-up-right'></i>
                 </Link>
                 <h4>
-                  <Link href='portfolio'>Digital Marketing</Link>
+                  <Link href='#'>Social Media Marketing</Link>
                 </h4>
               </div>
             </div>
@@ -135,15 +135,15 @@ const PortfolioText = () => {
                 (hover === 1 ? ' portfolio__single-active' : ' ')
               }
               onMouseEnter={() => setHover(1)}>
-              <Link href='portfolio'>
+              <Link href='#'>
                 <Image src={two} alt='Image' />
               </Link>
               <div className='portfolio__single-content'>
-                <Link href='portfolio'>
+                <Link href='#'>
                   <i className='fa-sharp fa-solid fa-arrow-up-right'></i>
                 </Link>
                 <h4>
-                  <Link href='portfolio'>Digital Marketing</Link>
+                  <Link href='#'>Website Design & Development</Link>
                 </h4>
               </div>
             </div>
@@ -155,15 +155,15 @@ const PortfolioText = () => {
                 (hover === 2 ? ' portfolio__single-active' : ' ')
               }
               onMouseEnter={() => setHover(2)}>
-              <Link href='portfolio'>
+              <Link href='#'>
                 <Image src={three} alt='Image' />
               </Link>
               <div className='portfolio__single-content'>
-                <Link href='portfolio'>
+                <Link href='#'>
                   <i className='fa-sharp fa-solid fa-arrow-up-right'></i>
                 </Link>
                 <h4>
-                  <Link href='portfolio'>Digital Marketing</Link>
+                  <Link href='#'>Search Engine Optimization (SEO)</Link>
                 </h4>
               </div>
             </div>
@@ -175,15 +175,15 @@ const PortfolioText = () => {
                 (hover === 3 ? ' portfolio__single-active' : ' ')
               }
               onMouseEnter={() => setHover(3)}>
-              <Link href='portfolio'>
+              <Link href='#'>
                 <Image src={four} alt='Image' />
               </Link>
               <div className='portfolio__single-content'>
-                <Link href='portfolio'>
+                <Link href='#'>
                   <i className='fa-sharp fa-solid fa-arrow-up-right'></i>
                 </Link>
                 <h4>
-                  <Link href='portfolio'>Digital Marketing</Link>
+                  <Link href='#'>Branding & Graphic Design</Link>
                 </h4>
               </div>
             </div>
@@ -195,15 +195,15 @@ const PortfolioText = () => {
                 (hover === 4 ? ' portfolio__single-active' : ' ')
               }
               onMouseEnter={() => setHover(4)}>
-              <Link href='portfolio'>
+              <Link href='#'>
                 <Image src={five} alt='Image' />
               </Link>
               <div className='portfolio__single-content'>
-                <Link href='portfolio'>
+                <Link href='#'>
                   <i className='fa-sharp fa-solid fa-arrow-up-right'></i>
                 </Link>
                 <h4>
-                  <Link href='portfolio'>Digital Marketing</Link>
+                  <Link href='#'>Online Advertising</Link>
                 </h4>
               </div>
             </div>
@@ -215,15 +215,15 @@ const PortfolioText = () => {
                 (hover === 5 ? ' portfolio__single-active' : ' ')
               }
               onMouseEnter={() => setHover(5)}>
-              <Link href='portfolio'>
+              <Link href='#'>
                 <Image src={six} alt='Image' />
               </Link>
               <div className='portfolio__single-content'>
-                <Link href='portfolio'>
+                <Link href='#'>
                   <i className='fa-sharp fa-solid fa-arrow-up-right'></i>
                 </Link>
                 <h4>
-                  <Link href='portfolio'>Digital Marketing</Link>
+                  <Link href='#'>Content Creation</Link>
                 </h4>
               </div>
             </div>
@@ -232,9 +232,9 @@ const PortfolioText = () => {
             <div className='portfolio__single-alt-wrapper fade-top'>
               <div className='portfolio__single-alt topy-tilt'>
                 <h4>
-                  <Link href='portfolio'>view all work</Link>
+                  <Link href='#'>view all work</Link>
                 </h4>
-                <Link href='portfolio' className='arr'>
+                <Link href='#' className='arr'>
                   <i className='fa-sharp fa-solid fa-arrow-up-right'></i>
                 </Link>
                 <Image src={dot} alt='Image' className='dot-one' />
@@ -249,15 +249,15 @@ const PortfolioText = () => {
                 (hover === 6 ? ' portfolio__single-active' : ' ')
               }
               onMouseEnter={() => setHover(6)}>
-              <Link href='portfolio'>
+              <Link href='#'>
                 <Image src={seven} alt='Image' />
               </Link>
               <div className='portfolio__single-content'>
-                <Link href='portfolio'>
+                <Link href='#'>
                   <i className='fa-sharp fa-solid fa-arrow-up-right'></i>
                 </Link>
                 <h4>
-                  <Link href='portfolio'>Digital Marketing</Link>
+                  <Link href='#'>Digital Portfolio</Link>
                 </h4>
               </div>
             </div>

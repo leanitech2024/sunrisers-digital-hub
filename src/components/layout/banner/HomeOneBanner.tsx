@@ -54,25 +54,24 @@ const HomeOneBanner = () => {
             <div className='col-12'>
               <div className='banner__content'>
                 <h1 className='text-uppercase text-start fw-9 mb-0 title-anim'>
-                  We are
-                  <span className='text-stroke'>creative</span>
+                  Rise Your Brand <span className='text-stroke'>in the</span>
                   <span className='interval'>
-                    <i className='icon-arrow-top-right'></i> digital agency
+                    <i className='icon-arrow-top-right'></i> Digital World
                   </span>
                 </h1>
                 <div className='banner__content-inner'>
                   <p>
-                    We are a full-service website design, development and
-                    digital marketing company specializing in SEO, content
-                    marketing that grows brands.
+                    Sunrisers Digital Hub is a Bangalore-based digital marketing
+                    company dedicated to helping businesses grow and succeed in
+                    the online world.
                   </p>
                   <div className='cta section__content-cta'>
                     <div className='single'>
-                      <h5 className='fw-7'>12+</h5>
+                      <h5 className='fw-7'>3+</h5>
                       <p className='fw-5'>years of experience</p>
                     </div>
                     <div className='single'>
-                      <h5 className='fw-7'>25k</h5>
+                      <h5 className='fw-7'>1k</h5>
                       <p className='fw-5'>completed projects</p>
                     </div>
                   </div>
@@ -88,8 +87,11 @@ const HomeOneBanner = () => {
         />
         <Image src={star} alt='Image' className='star' />
         <div className='banner-left-text banner-social-text d-none d-md-flex'>
-          <Link href='mailto:info@xpovio.com'>mail : info@xpovio.com</Link>
-          <Link href='tel:99-2158-003-6980'>Call : +99 2158 003 6980</Link>
+          <Link href='mailto:sunrisersdigitalhub@gmail.com'>
+            mail : sunrisersdigitalhub@gmail.com
+          </Link>
+          <Link href='tel:+919845732329'>Call : +91 98457 32329</Link>
+          <Link href='tel:+919739932329'>Call : +91 97399 32329</Link>
         </div>
         <div className='banner-right-text banner-social-text d-none d-md-flex'>
           <Link href='https://www.instagram.com/' target='_blank'>

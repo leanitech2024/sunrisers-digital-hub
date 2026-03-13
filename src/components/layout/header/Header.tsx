@@ -54,8 +54,21 @@ const Header = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
               <div className='col-12'>
                 <nav className='navbar p-0'>
                   <div className='navbar__logo'>
-                    <Link href='/' aria-label='go to home'>
-                      <Image src={logoSrc} alt='Image' priority />
+                    <Link
+                      href='/'
+                      aria-label='go to home'
+                      style={{
+                        width: '100px',
+                        height: '100px',
+                      }}>
+                      <Image
+                        src={'/logo.png'}
+                        alt='Image'
+                        width={800}
+                        height={800}
+                        className={'w-full h-full'}
+                        priority
+                      />
                     </Link>
                   </div>
                   <div className='navbar__options'>
