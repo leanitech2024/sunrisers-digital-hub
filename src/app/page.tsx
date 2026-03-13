@@ -11,7 +11,7 @@ import Layout from '@/components/layout/Layout';
 export default function Home() {
   return (
     <>
-      <Layout header={1} footer={1} video={true}>
+      <Layout header={1} footer={1} video={false}>
         <HomeOneBanner />
         <Agency />
         <PortfolioText />

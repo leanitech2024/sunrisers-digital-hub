@@ -3,3 +3,20 @@
 
 /* custom icons */
 @import url('./../../public/icons/glyphter/css/xpovio.css');
+
+p,
+th,
+td,
+li,
+input,
+textarea,
+select,
+label,
+blockquote,
+span {
+  color: var(--text-primary);
+}
+
+._chatHeader_181xn_163 ._status_181xn_229 {
+  padding: 0px !important;
+}
