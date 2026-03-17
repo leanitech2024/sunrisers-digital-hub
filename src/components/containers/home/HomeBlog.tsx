@@ -1,3 +1,4 @@
+import { allBlogs } from 'content-collections';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -79,6 +80,30 @@ const HomeBlog = () => {
           </div>
         </div>
       </div>
+
+      <ul>
+        {allBlogs.map((post) => (
+          <li key={post._meta.path}>
+            <a href={`/blogs/${post._meta.path}`}>
+              <h3>{post.title}</h3>
+              <p>{post.summary}</p>
+              <p>
+                Last modified:{' '}
+                {new Date(post.lastModified).toLocaleDateString()}
+              </p>
+            </a>
+          </li>
+        ))}
+      </ul>
+
+      <ul>
+        {allBlogs.map((post) => (
+          <li key={post._meta.path}>
+            <h2>{post.title}</h2>
+            <div dangerouslySetInnerHTML={{ __html: post.html }} />
+          </li>
+        ))}
+      </ul>
     </section>
   );
 };
