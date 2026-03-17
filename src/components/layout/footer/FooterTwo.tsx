@@ -4,13 +4,12 @@ import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
-import logo from '../../../../public/images/logo.png';
 
 gsap.registerPlugin(ScrollTrigger);
 const FooterTwo = () => {
   const currentYear = new Date().getFullYear();
 
-  const animatedTextRef = useRef<any>(null);
+  const animatedTextRef = useRef<HTMLAnchorElement | null>(null);
   const [animatedTextContent, setAnimatedTextContent] = useState('');
 
   useEffect(() => {
@@ -99,7 +98,8 @@ const FooterTwo = () => {
   useEffect(() => {
     const animatedText = animatedTextRef.current;
     const textContent = animatedTextRef.current?.textContent;
-    if (textContent) {
+    if (textContent && animatedText) {
+      // eslint-disable-next-line
       setAnimatedTextContent(textContent);
       animatedText.innerHTML = '';
     }
@@ -112,24 +112,35 @@ const FooterTwo = () => {
           <div className='col-12 col-lg-5 col-xl-4'>
             <div className='footer-two__left'>
               <div className='logo'>
-                <Link href='/'>
-                  <Image src={logo} priority alt='Image' />
+                <Link
+                  href='/'
+                  className='logo'
+                  style={{
+                    width: '100px',
+                    height: '100px',
+                  }}>
+                  <Image
+                    src={'/logo.png'}
+                    alt='Image'
+                    width={800}
+                    height={800}
+                    className={'w-full h-full'}
+                  />
                 </Link>
               </div>
               <div className='paragraph'>
                 <p>
-                  Welcome to our digital agency We specialize in helping
-                  business most like yours succeed online. From website design
-                  and development.
+                  Welcome to our Sunrisers Digital Hub. We specialize in helping
+                  business most like yours succeed online.
                 </p>
               </div>
               <div className='section__content-cta'>
-                <h2>
+                <h4>
                   <Link
-                    href='mailto:info@gmail.com'
+                    href='mailto:sunrisersdigitalhub@gmail.com'
                     className='folks-text animated-text'
                     ref={animatedTextRef}>
-                    info@gmail.com
+                    sunrisersdigitalhub@gmail.com
                     {animatedTextContent.split('').map((char, index) => (
                       <span
                         aria-hidden='true'
@@ -139,49 +150,76 @@ const FooterTwo = () => {
                       </span>
                     ))}
                   </Link>
-                </h2>
+                </h4>
               </div>
             </div>
           </div>
           <div className='col-12 col-lg-7 col-xl-7 offset-xl-1 col-xxl-5 offset-xxl-3'>
             <div className='footer-two__right'>
               <div className='social justify-content-start justify-content-lg-start'>
-                <Link href='https://www.facebook.com/' target='_blank'>
+                <Link
+                  href='https://www.facebook.com/'
+                  target='_blank'
+                  className='text-secondary'>
                   <i className='fa-brands fa-facebook-f'></i>
                   <span>Facebook</span>
                 </Link>
-                <Link href='https://www.twitter.com/' target='_blank'>
+                <Link
+                  href='https://www.twitter.com/'
+                  target='_blank'
+                  className='text-secondary'>
                   <i className='fa-brands fa-twitter'></i>
                   <span>Twitter</span>
                 </Link>
-                <Link href='https://www.pinterest.com/' target='_blank'>
+                <Link
+                  href='https://www.pinterest.com/'
+                  target='_blank'
+                  className='text-secondary'>
                   <i className='fa-brands fa-linkedin-in'></i>
                   <span>Linkedin</span>
                 </Link>
-                <Link href='https://www.instagram.com/' target='_blank'>
+                <Link
+                  href='https://www.instagram.com/'
+                  target='_blank'
+                  className='text-secondary'>
                   <i className='fa-brands fa-instagram'></i>
                   <span>Instagram</span>
                 </Link>
-                <Link href='https://www.dribble.com/' target='_blank'>
+                <Link
+                  href='https://www.dribble.com/'
+                  target='_blank'
+                  className='text-secondary'>
                   <i className='fa-light fa-basketball'></i>
                   <span>Dribble</span>
                 </Link>
               </div>
               <div className='footer__single-meta section__content-cta'>
                 <Link
-                  href='https://www.google.com/maps/d/viewer?mid=1UZ57Drfs3SGrTgh6mrYjQktu6uY&hl=en_US&ll=18.672105000000013%2C105.68673800000003&z=17'
+                  href='https://www.google.com/maps/place/Indiranagar,+Bengaluru,+Karnataka/@12.97296,77.6279118,3232m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3bae16a418770391:0xb50f46b826501036!8m2!3d12.9783692!4d77.6408356!16zL20vMDZ5M3Zj?entry=ttu&g_ep=EgoyMDI2MDMxMS4wIKXMDSoASAFQAw%3D%3D'
                   target='_blank'>
                   <i className='fa-sharp fa-solid fa-location-dot'></i>
-                  901 N Pitt Str., Suite 170 Alexandria, USA
+                  Indira nagar Bangalore, India
                 </Link>
-                <Link href='tel:406-555-0120'>
+                <Link href='tel:+919845732329'>
+                  <i className='fa-sharp fa-solid fa-phone-volume'></i>
+                  +919845 732329
+                </Link>
+                <Link href='tel:+919739932329'>
+                  <i className='fa-sharp fa-solid fa-phone-volume'></i>
+                  +9197399 32329
+                </Link>
+                <Link href='mailto:sunrisersdigitalhub@gmail.com'>
+                  <i className='fa-sharp fa-solid fa-envelope'></i>
+                  sunrisersdigitalhub@gmail.com
+                </Link>
+                {/* <Link href='tel:406-555-0120'>
                   <i className='fa-sharp fa-solid fa-phone-volume'></i>
                   (406) 555-0120
                 </Link>
                 <Link href='mailto:info@xpovio.com'>
                   <i className='fa-sharp fa-solid fa-envelope'></i>
                   info@xpovio.com
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>
@@ -194,33 +232,27 @@ const FooterTwo = () => {
               <div className='footer__copyright-text text-center text-xl-start'>
                 <p>
                   Copyright &copy;
-                  <span id='copyYear'>{currentYear}</span> Xpovio by{' '}
-                  <Link
-                    href='https://themeforest.net/user/UltraDevs'
-                    target='_blank'>
-                    {' '}
-                    UltraDevs
-                  </Link>{' '}
-                  . All Rights Reserved
+                  <span id='copyYear'>{currentYear}</span> Sunrisers Digital
+                  Hub. All Rights Reserved
                 </p>
               </div>
             </div>
             <div className='col-12 col-xl-6'>
               <ul className='justify-content-center justify-content-xl-end'>
                 <li>
-                  <Link href='/'>Home</Link>
+                  <Link href='#home'>Home</Link>
                 </li>
                 <li>
-                  <Link href='about-us'>About</Link>
+                  <Link href='#about'>About</Link>
                 </li>
                 <li>
-                  <Link href='our-services'>Services</Link>
+                  <Link href='#services'>Services</Link>
                 </li>
                 <li>
-                  <Link href='blog'>Blog</Link>
+                  <Link href='#blogs'>Blog</Link>
                 </li>
                 <li>
-                  <Link href='contact-us'>Contact</Link>
+                  <Link href='#contact'>Contact</Link>
                 </li>
               </ul>
             </div>

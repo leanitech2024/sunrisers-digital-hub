@@ -24,8 +24,8 @@ import VideoModal from './VideoModal';
 
 type LayoutProps = {
   children: React.ReactNode;
-  handleMouseEnterTitle?: any;
-  handleMouseLeaveTitle?: any;
+  handleMouseEnterTitle?: () => void;
+  handleMouseLeaveTitle?: () => void;
   header?: React.ReactNode;
   footer?: React.ReactNode;
   video?: React.ReactNode;

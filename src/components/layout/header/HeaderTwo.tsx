@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+// import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
-import logoLight from '../../../../public/images/logo-light.png';
-import logo from '../../../../public/images/logo.png';
+// import logoLight from '../../../../public/images/logo-light.png';
+// import logo from '../../../../public/images/logo.png';
 import Offcanvas from './Offcanvas';
 
 interface HeaderProps {
@@ -38,12 +38,12 @@ const HeaderTwo = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
     scrolled ? ' navbar-active' : ' '
   } ${defaultClasses}`;
 
-  let logoSrc = logo;
+  // let logoSrc = logo;
 
-  const pathname = usePathname();
-  if (pathname === '/index-two-light') {
-    logoSrc = logoLight;
-  }
+  // const pathname = usePathname();
+  // if (pathname === '/index-two-light') {
+  //   logoSrc = logoLight;
+  // }
 
   return (
     <>
@@ -54,13 +54,34 @@ const HeaderTwo = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
               <div className='col-12'>
                 <nav className='navbar p-0'>
                   <div className='navbar__logo'>
-                    <Link href='/' aria-label='go to home'>
-                      <Image src={logoSrc} priority alt='Image' />
+                    <Link
+                      href='/'
+                      aria-label='go to home'
+                      style={{
+                        width: '100px',
+                        height: '100px',
+                      }}>
+                      <Image
+                        src={'/logo.png'}
+                        alt='Image'
+                        width={800}
+                        height={800}
+                        className={'w-full h-full'}
+                        priority
+                      />
                     </Link>
                   </div>
                   <div className='navbar__menu'>
-                    <ul>
+                    <ul className='column-gap-3'>
                       <li className='navbar__item navbar__item--has-children nav-fade'>
+                        <Link
+                          scroll={true}
+                          href={'#home'}
+                          className='navbar__dropdown-label'>
+                          Home
+                        </Link>
+                      </li>
+                      {/* <li className='navbar__item navbar__item--has-children nav-fade'>
                         <button
                           aria-label='dropdown menu'
                           className='navbar__dropdown-label'>
@@ -108,11 +129,24 @@ const HeaderTwo = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
                             </Link>
                           </li>
                         </ul>
-                      </li>
-                      <li className='navbar__item nav-fade'>
-                        <Link href='about-us'>About Us</Link>
+                      </li> */}
+                      <li className='navbar__item navbar__item--has-children nav-fade'>
+                        <Link
+                          scroll={true}
+                          href='#about'
+                          className='navbar__dropdown-label'>
+                          About Us
+                        </Link>
                       </li>
                       <li className='navbar__item navbar__item--has-children nav-fade'>
+                        <Link
+                          scroll={true}
+                          href='#services'
+                          className='navbar__dropdown-label'>
+                          Services
+                        </Link>
+                      </li>
+                      {/* <li className='navbar__item navbar__item--has-children nav-fade'>
                         <button
                           aria-label='dropdown menu'
                           className='navbar__dropdown-label'>
@@ -126,8 +160,8 @@ const HeaderTwo = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
                             <Link href='service-single'>Service Details</Link>
                           </li>
                         </ul>
-                      </li>
-                      <li className='navbar__item navbar__item--has-children nav-fade'>
+                      </li> */}
+                      {/* <li className='navbar__item navbar__item--has-children nav-fade'>
                         <button
                           aria-label='dropdown menu'
                           className='navbar__dropdown-label'>
@@ -141,8 +175,8 @@ const HeaderTwo = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
                             <Link href='project-single'>Project Details</Link>
                           </li>
                         </ul>
-                      </li>
-                      <li className='navbar__item navbar__item--has-children nav-fade'>
+                      </li> */}
+                      {/* <li className='navbar__item navbar__item--has-children nav-fade'>
                         <button
                           aria-label='dropdown menu'
                           className='navbar__dropdown-label'>
@@ -183,8 +217,8 @@ const HeaderTwo = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
                             <Link href='contact-us'>Contact Us</Link>
                           </li>
                         </ul>
-                      </li>
-                      <li className='navbar__item navbar__item--has-children nav-fade'>
+                      </li> */}
+                      {/* <li className='navbar__item navbar__item--has-children nav-fade'>
                         <button
                           aria-label='dropdown menu'
                           className='navbar__dropdown-label'>
@@ -195,15 +229,32 @@ const HeaderTwo = ({ openNav, handleNav, setOpenNav }: HeaderProps) => {
                             <Link href='blog'>Blog</Link>
                           </li>
                           <li>
-                            <Link href='blog-single'>Blog Details</Link>
+                            <Link href='#'>Blog Details</Link>
                           </li>
                         </ul>
+                      </li> */}
+
+                      <li className='navbar__item navbar__item--has-children nav-fade'>
+                        <Link
+                          scroll={true}
+                          href={'#blogs'}
+                          className='navbar__dropdown-label'>
+                          Blogs
+                        </Link>
+                      </li>
+                      <li className='navbar__item navbar__item--has-children nav-fade'>
+                        <Link
+                          scroll={true}
+                          href={'#contact'}
+                          className='navbar__dropdown-label'>
+                          Contact
+                        </Link>
                       </li>
                     </ul>
                   </div>
                   <div className='navbar__options'>
                     <div className='navbar__mobile-options d-none d-sm-flex'>
-                      <Link href='contact-us' className='btn btn--secondary'>
+                      <Link href='#contact' className='btn btn--secondary'>
                         Let&apos;s Talk
                       </Link>
                     </div>

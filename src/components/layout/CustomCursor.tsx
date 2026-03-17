@@ -3,8 +3,8 @@
 import React, { useEffect, useState } from 'react';
 
 interface CustomCursorProps {
-  onTitleMouseEnter: () => void;
-  onTitleMouseLeave: () => void;
+  onTitleMouseEnter?: () => void;
+  onTitleMouseLeave?: () => void;
 }
 
 const CustomCursor: React.FC<CustomCursorProps> = () => {

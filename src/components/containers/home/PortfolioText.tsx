@@ -11,7 +11,9 @@ import dot from '../../../../public/images/portfolio/dot.png';
 const PortfolioText = () => {
   const [hover, setHover] = useState(0);
   return (
-    <section className='section portfolio pb-0 fade-wrapper position-relative'>
+    <section
+      id='services'
+      className='section portfolio fade-wrapper position-relative'>
       <div className='portfolio__text-slider-w'>
         <Swiper
           slidesPerView='auto'
