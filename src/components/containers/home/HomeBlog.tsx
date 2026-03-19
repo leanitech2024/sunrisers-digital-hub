@@ -2,6 +2,8 @@ import { allBlogs } from 'content-collections';
 import Image from 'next/image';
 import Link from 'next/link';
 
+const isDev = process.env.NODE_ENV === 'development';
+
 const HomeBlog = () => {
   return (
     <section id='blogs' className='section blog fade-wrapper'>
@@ -81,6 +83,7 @@ const HomeBlog = () => {
         </div>
       </div>
 
+      {isDev ? (<>
       <ul>
         {allBlogs.map((post) => (
           <li key={post._meta.path}>
@@ -104,6 +107,8 @@ const HomeBlog = () => {
           </li>
         ))}
       </ul>
+      </>) : null}
+
     </section>
   );
 };

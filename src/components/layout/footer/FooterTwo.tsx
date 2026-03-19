@@ -154,7 +154,8 @@ const FooterTwo = () => {
               </div>
             </div>
           </div>
-          <div className='col-12 col-lg-7 col-xl-7 offset-xl-1 col-xxl-5 offset-xxl-3'>
+          {/* // className='col-12 col-lg-7 col-xl-7 offset-xl-1 col-xxl-5 offset-xxl-3' */}
+          <div className='col-12 col-lg-7 col-xl-8'>
             <div className='footer-two__right'>
               <div className='social justify-content-start justify-content-lg-start'>
                 <Link
@@ -193,12 +194,17 @@ const FooterTwo = () => {
                   <span>Dribble</span>
                 </Link>
               </div>
-              <div className='footer__single-meta section__content-cta'>
+              <div className='footer__single-meta section__content-cta col-12'>
                 <Link
-                  href='https://www.google.com/maps/place/Indiranagar,+Bengaluru,+Karnataka/@12.97296,77.6279118,3232m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3bae16a418770391:0xb50f46b826501036!8m2!3d12.9783692!4d77.6408356!16zL20vMDZ5M3Zj?entry=ttu&g_ep=EgoyMDI2MDMxMS4wIKXMDSoASAFQAw%3D%3D'
+                  href='https://www.google.com/maps/place/2nd,+3603,+13th+G+Main+Rd,+Channakesahava+Nagar,+HAL+2nd+Stage,+Doopanahalli,+Indiranagar,+Bengaluru,+Karnataka+560008/@12.9659752,77.636534,808m/data=!3m2!1e3!4b1!4m5!3m4!1s0x3bae141c5724aff7:0xe8f34656d69a44cc!8m2!3d12.96597!4d77.6391089?entry=ttu&g_ep=EgoyMDI2MDMxNS4wIKXMDSoASAFQAw%3D%3D'
                   target='_blank'>
                   <i className='fa-sharp fa-solid fa-location-dot'></i>
-                  Indira nagar Bangalore, India
+                  2nd, 3603, 13 G Main, 5th Cross, HAL 2nd Stage, Indiranagar,
+                  Bengaluru (Bangalore) Urban, Karnataka, 560038
+                </Link>
+                <Link href='mailto:sunrisersdigitalhub@gmail.com'>
+                  <i className='fa-sharp fa-solid fa-envelope'></i>
+                  sunrisersdigitalhub@gmail.com
                 </Link>
                 <Link href='tel:+919845732329'>
                   <i className='fa-sharp fa-solid fa-phone-volume'></i>
@@ -207,10 +213,6 @@ const FooterTwo = () => {
                 <Link href='tel:+919739932329'>
                   <i className='fa-sharp fa-solid fa-phone-volume'></i>
                   +9197399 32329
-                </Link>
-                <Link href='mailto:sunrisersdigitalhub@gmail.com'>
-                  <i className='fa-sharp fa-solid fa-envelope'></i>
-                  sunrisersdigitalhub@gmail.com
                 </Link>
                 {/* <Link href='tel:406-555-0120'>
                   <i className='fa-sharp fa-solid fa-phone-volume'></i>
