@@ -196,13 +196,15 @@ const FooterTwo = () => {
               </div>
               <div className='footer__single-meta section__content-cta col-12'>
                 <Link
+                  className='w-100'
                   href='https://www.google.com/maps/place/2nd,+3603,+13th+G+Main+Rd,+Channakesahava+Nagar,+HAL+2nd+Stage,+Doopanahalli,+Indiranagar,+Bengaluru,+Karnataka+560008/@12.9659752,77.636534,808m/data=!3m2!1e3!4b1!4m5!3m4!1s0x3bae141c5724aff7:0xe8f34656d69a44cc!8m2!3d12.96597!4d77.6391089?entry=ttu&g_ep=EgoyMDI2MDMxNS4wIKXMDSoASAFQAw%3D%3D'
                   target='_blank'>
                   <i className='fa-sharp fa-solid fa-location-dot'></i>
                   2nd, 3603, 13 G Main, 5th Cross, HAL 2nd Stage, Indiranagar,
                   Bengaluru (Bangalore) Urban, Karnataka, 560038
                 </Link>
-                <Link href='mailto:sunrisersdigitalhub@gmail.com'>
+                <Link
+                  href='mailto:sunrisersdigitalhub@gmail.com'>
                   <i className='fa-sharp fa-solid fa-envelope'></i>
                   sunrisersdigitalhub@gmail.com
                 </Link>

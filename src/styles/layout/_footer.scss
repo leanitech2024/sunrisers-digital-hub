@@ -130,7 +130,8 @@
     gap: 24px;
     flex-wrap: wrap;
     a {
-      max-width: 220px;
+      // max-width: 220px;
+      max-width: 100%;
       color: var(--white);
       line-height: 28px;
       font-weight: 500;
