@@ -21,6 +21,8 @@ const geistMono = Geist_Mono({
   subsets: ['latin'],
 });
 
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
+
 export const metadata: Metadata = {
   title: 'Sunrisers Digital Hub',
   description:
@@ -46,6 +48,7 @@ export const metadata: Metadata = {
     'business growth solutions',
     'roi driven marketing',
   ],
+  metadataBase: new URL(BASE_URL),
   applicationName: 'Sunrisers Digital Hub',
   generator: 'Next.js',
   referrer: 'same-origin',
