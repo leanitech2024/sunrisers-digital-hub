@@ -159,7 +159,7 @@ const FooterTwo = () => {
             <div className='footer-two__right'>
               <div className='social justify-content-start justify-content-lg-start'>
                 <Link
-                  href='https://www.facebook.com/'
+                  href='https://www.facebook.com/sunrisersdigitalhub'
                   target='_blank'
                   className='text-secondary'>
                   <i className='fa-brands fa-facebook-f'></i>
@@ -180,7 +180,7 @@ const FooterTwo = () => {
                   <span>Linkedin</span>
                 </Link>
                 <Link
-                  href='https://www.instagram.com/'
+                  href='https://www.instagram.com/sunrisersdigitalhub/'
                   target='_blank'
                   className='text-secondary'>
                   <i className='fa-brands fa-instagram'></i>
@@ -203,8 +203,7 @@ const FooterTwo = () => {
                   2nd, 3603, 13 G Main, 5th Cross, HAL 2nd Stage, Indiranagar,
                   Bengaluru (Bangalore) Urban, Karnataka, 560038
                 </Link>
-                <Link
-                  href='mailto:sunrisersdigitalhub@gmail.com'>
+                <Link href='mailto:sunrisersdigitalhub@gmail.com'>
                   <i className='fa-sharp fa-solid fa-envelope'></i>
                   sunrisersdigitalhub@gmail.com
                 </Link>

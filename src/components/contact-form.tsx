@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { setupMetaPixel } from './analytics';
 
 export default function ContactForm() {
   const [result, setResult] = useState('');
@@ -13,6 +14,8 @@ export default function ContactForm() {
       'Web3Forms API URL or Access Key is not defined in environment variables.',
     );
   }
+
+  const fbq = setupMetaPixel();
 
   const onSubmit = async (event: React.SubmitEvent) => {
     event.preventDefault();
@@ -32,6 +35,7 @@ export default function ContactForm() {
 
       if (data.success) {
         setResult('Form Submitted Successfully');
+        fbq('track', 'Contact');
         event.target.reset();
         setTimeout(() => {
           setResult('');

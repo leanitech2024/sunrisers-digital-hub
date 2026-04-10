@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // main scss
 import '@/styles/main.scss';
 
+import Analytics from '@/components/analytics';
 import Layout from '@/components/layout/Layout';
 import { LazyWhatsappButton } from '@/components/whatsapp-button';
 import './globals.css';
@@ -75,7 +76,7 @@ export const metadata: Metadata = {
     locale: 'en_IN',
     images: [
       {
-        url: '/logo.png',
+        url: '/og-image.jpeg',
         width: 1200,
         height: 630,
         alt: 'Sunrisers Digital Hub - Building Powerful Brands',
@@ -101,6 +102,9 @@ export const metadata: Metadata = {
       name: 'Shobana R.',
     },
   ],
+  alternates: {
+    canonical: 'https://sunrisersdigitalhub.com',
+  },
 };
 
 export default function RootLayout({
@@ -114,6 +118,7 @@ export default function RootLayout({
         <Layout header={2} footer={2} video={false}>
           {children}
         </Layout>
+        <Analytics />
         <LazyWhatsappButton />
       </body>
     </html>
